@@ -67,6 +67,8 @@ public class SampleSD {
     @Then("I should get another error")
     public void verifyErrorMessage() {
         System.out.println("I should get another error");
+        Assert.assertEquals("this is not a dashboard",
+                true,false);
     }
 
     @When("I enter {string} and {string}")
@@ -103,5 +105,14 @@ public class SampleSD {
     }
 
 
+    @Given("Open the browser")
+    public void openTheBrowser() {
 
+        System.out.println("======== >>>> Open the browser");
+    }
+
+    @And("maximize it")
+    public void maximizeIt() {
+        System.out.println("======== >>>> maximize it");
+    }
 }

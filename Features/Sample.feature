@@ -1,5 +1,9 @@
 Feature: all login scenarios
 
+  Background: primary steps
+    Given Open the browser
+    And maximize it
+
   @login
   Scenario: to test the functionality of login button for valid input
     Given login page is opened
